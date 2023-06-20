@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projeto Fintech</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+	</head>
+	<body>
+		<header class="container-fluid">
+			<h1>Projeto Fintech</h1>
+			<h4>Rodrigo Singh Gedam - RM: 98052</h4>
+			<h5>Introdução</h5>
+			<p>
+				Tive dificuldades para fazer as páginas de receitas e despesas responsivas pois
+				estava fazendo um gráfico de pizza e não consegui fazer ele ficar dentro da tela,
+				mas deixei essas telas comentadas pois elas funcionam na forma web.
+			</p>
+			<p>
+				Usei JavaScript para alguns botões somente para mostrar que eles funcionam e sua
+				função.
+			</p>
+		</header>
+		<main class="container-sm">
+			<div class="tela">
+				<section class="login">
+					<div class="caixa__login">
+						<div>
+							<h2>Login</h2>
+							<div class="inputbox">
+								<i class="bi bi-envelope-fill"></i>
+								<input type="email" required />
+								<label for="">Email</label>
+							</div>
+							<div class="inputbox">
+								<i class="bi bi-lock-fill"></i>
+								<input type="password" required />
+								<label for="">Password</label>
+							</div>
+							<div class="forget">
+								<label for=""><input type="checkbox" /> Lembrar-me </label>
+								<a
+									href="#"
+									onclick="alert('Vai para a página de recuperação de senha')">
+									Esqueci a senha
+								</a>
+							</div>
+							<button class="botao__login" onclick="alert('Faz o Login')">
+								Login
+							</button>
+							<div class="register">
+								<p>
+									<a href="#" onclick="alert('Vai para a página de criar conta')">
+										Criar uma conta
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="tela" id="menu">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<p class="navbar-brand">Fintech</p>
+						<h1>Menu</h1>
+						<form class="d-flex" role="search">
+							<button
+								class="btn"
+								type="button"
+								onclick="alert('Vai para as configurações')">
+								<i class="bi bi-gear-fill"></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+				<div class="container-fluid text-center">
+					<div class="row row-cols-1 row-cols-md-2 g-4">
+						<div class="col">
+							<div class="card">
+								<div class="fundo__card">
+									<p>
+										<a href="#servico">
+											<i class="bi bi-database-fill-gear"> </i>
+										</a>
+									</p>
+									<div class="card-body">
+										<h5 class="card-title"><a href="#servico">Serviços</a></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="fundo__card">
+									<p>
+										<a href="#metas">
+											<i class="bi bi-journal-check"></i>
+										</a>
+									</p>
+									<div class="card-body">
+										<h5 class="card-title"><a href="#metas">Metas</a></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="fundo__card">
+									<p>
+										<a
+											href="#receitas"
+											onclick="alert('Vai para a página de receitas')">
+											<i class="bi bi-piggy-bank-fill"> </i>
+										</a>
+									</p>
+									<div class="card-body">
+										<h5 class="card-title">
+											<a
+												href="#receitas"
+												onclick="alert('Vai para a página de receitas')">
+												Receitas
+											</a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="fundo__card">
+									<p>
+										<a
+											href="#despesas"
+											onclick="alert('Vai para a página de despesas')">
+											<i class="bi bi-cash-coin"></i>
+										</a>
+									</p>
+									<div class="card-body">
+										<h5 class="card-title">
+											<a
+												href="#despesas"
+												onclick="alert('Vai para a página de despesas')">
+												Despesas
+											</a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="rodape container-fluid rodape__menu">
+					<div class="sticky-md-bottom">
+						<a href="#menu" onclick="alert('Vai para a página de Acesso Pessoal')">
+							<i class="bi bi-person-fill"></i>Acesso Pessoal
+						</a>
+					</div>
+				</footer>
+			</div>
+			<div class="tela" id="servico">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#menu"><i class="bi bi-house-fill"></i></a>
+						<h1>Serviços Contratados</h1>
+						<form class="d-flex" role="search">
+							<button
+								class="btn"
+								type="button"
+								onclick="alert('Vai para as configurações')">
+								<i class="bi bi-gear-fill"></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+				<div class="container text-center">
+					<table class="table">
+						<thead>
+							<tr class="table-secondary">
+								<th scope="col">#</th>
+								<th scope="col">Item</th>
+								<th scope="col">Valor</th>
+								<th scope="col">Info</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-secondary">
+								<th scope="row">1</th>
+								<td>Seguro do Carro</td>
+								<td>R$ 400,00</td>
+								<td>
+									<a><i class="bi bi-info-circle-fill"></i></a>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<th scope="row">2</th>
+								<td>Mercado</td>
+								<td>R$ 650,00</td>
+								<td>
+									<a><i class="bi bi-info-circle-fill"></i></a>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<th scope="row">3</th>
+								<td>Academia</td>
+								<td>R$ 125,00</td>
+								<td>
+									<a><i class="bi bi-info-circle-fill"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<footer class="rodape container-fluid">
+					<div class="sticky-md-bottom">
+						<a href="#servico" onclick="alert('Adiciona um Gasto')">
+							<i class="bi bi-plus-square-fill"></i>
+							Adicionar Gasto
+						</a>
+					</div>
+				</footer>
+			</div>
+			<div class="tela" id="metas">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#menu"><i class="bi bi-house-fill"></i></a>
+						<h1>Suas Metas</h1>
+						<form class="d-flex" role="search">
+							<button
+								class="btn"
+								type="button"
+								onclick="alert('Vai para as configurações')">
+								<i class="bi bi-gear-fill"></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+				<div class="container text-center">
+					<table class="table">
+						<thead>
+							<tr class="table-secondary">
+								<th scope="col">#</th>
+								<th scope="col">Meta</th>
+								<th scope="col">Progresso</th>
+								<th scope="col">Valor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-secondary">
+								<th scope="row">1</th>
+								<td>Viagem Exterior</td>
+								<td>
+									<div
+										class="progress"
+										role="progressbar"
+										aria-valuenow="75"
+										aria-valuemin="0"
+										aria-valuemax="100"
+										style="height: 20px">
+										<div class="progress-bar bg-success" style="width: 75%">
+											75%
+										</div>
+									</div>
+									R$ 1500
+								</td>
+								<td>R$ 2000</td>
+							</tr>
+							<tr class="table-secondary">
+								<th scope="row">2</th>
+								<td>Roupas para a viagem</td>
+								<td>
+									<div
+										class="progress"
+										role="progressbar"
+										aria-valuenow="50"
+										aria-valuemin="0"
+										aria-valuemax="100"
+										style="height: 20px">
+										<div class="progress-bar bg-success" style="width: 50%">
+											50%
+										</div>
+									</div>
+									R$ 250
+								</td>
+								<td>R$ 500</td>
+							</tr>
+							<tr class="table-secondary">
+								<th scope="row">3</th>
+								<td>Show</td>
+								<td>
+									<div
+										class="progress"
+										role="progressbar"
+										aria-valuenow="15"
+										aria-valuemin="0"
+										aria-valuemax="100"
+										style="height: 20px">
+										<div class="progress-bar bg-success" style="width: 15%">
+											15%
+										</div>
+									</div>
+									R$ 60
+								</td>
+								<td>R$ 400</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<footer class="rodape container-fluid">
+					<div class="sticky-md-bottom">
+						<button
+							type="button"
+							class="btn btn-success"
+							onclick="alert('Adiciona uma Meta')">
+							<i class="bi bi-plus-square"></i> Adicionar Meta
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger"
+							onclick="alert('Deleta uma Meta')">
+							<i class="bi bi-dash-square"></i> Deletar Meta
+						</button>
+					</div>
+				</footer>
+			</div>
+			<!-- <div class="tela" id="receitas">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#menu"><i class="bi bi-house-fill"></i></a>
+						<h1>Receitas</h1>
+						<form class="d-flex" role="search">
+							<button class="btn" type="button" onclick="alert('Vai para as configurações')">
+								<i class="bi bi-gear-fill"></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+				<h2 style="text-align: center">Receitas do Mês</h2>
+				<div class="container grafico">
+					<div class="grafico__receita"></div>
+					<div class="grafico__receita__conteudo">
+						<div class="grafico__legenda">
+							<strong>Salário</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: red"></div>
+						</div>
+						<div class="grafico__legenda">
+							<strong>Investimentos</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: yellow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tela" id="despesas">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#menu"><i class="bi bi-house-fill"></i></a>
+						<h1>Despesas</h1>
+						<form class="d-flex" role="search">
+							<button class="btn" type="button" onclick="alert('Vai para as configurações')">
+								<i class="bi bi-gear-fill"></i>
+							</button>
+						</form>
+					</div>
+				</nav>
+				<h2 style="text-align: center">Despesas do Mês</h2>
+				<div class="container grafico">
+					<div class="grafico__despesas"></div>
+					<div class="grafico__despesas__conteudo">
+						<div class="grafico__legenda">
+							<strong>Aluguel</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: red"></div>
+						</div>
+						<div class="grafico__legenda">
+							<strong>Mercado</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: yellow"></div>
+						</div>
+						<div class="grafico__legenda">
+							<strong>Streaming</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: aqua"></div>
+						</div>
+						<div class="grafico__legenda">
+							<strong>Pets</strong>
+							<p>R$ XXXX,XX</p>
+							<div class="cor__legenda" style="background-color: greenyellow"></div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
